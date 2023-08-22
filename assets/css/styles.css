@@ -1,0 +1,724 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Sections General */
+section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* Wave Transition */
+.custom-shape-divider-top-1691167197 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.custom-shape-divider-top-1691167197 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-top-1691167197 .shape-fill {
+    fill: #000000;
+}
+
+/* Wave 2 */
+.custom-shape-divider-bottom-1691167216 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1691167216 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom-1691167216 .shape-fill {
+    fill: #000000;
+}
+
+/* Landing page */
+.landing-page {
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 20vh;
+    height: 20vh;
+}
+
+.banner {
+    position: relative;
+    margin-top: 24px;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner ul {
+    height: 6vh;
+    width: 60%;
+    margin-top: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.banner li a {
+    margin-right: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    font-weight: 800;
+    color: white;
+    font-size: 84px;
+}
+
+.subtitle {
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+.scroll-down {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    bottom: 60px;
+    right: 40px;
+
+    width: 200px;
+    height: 50px;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: none;
+
+    border-radius: 16px;
+    background: linear-gradient(to right, #afb8fc , #6f00ff);
+
+    transition: 1s;
+}
+
+.scroll-down:hover {
+    background-position: 200px;
+}
+
+/* Inscription page */
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/light-image.jpg');
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+    background-color: red;
+}
+.shadow {
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-image: radial-gradient(circle at center, transparent, #000 20%);
+}
+
+.inscription-page {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    z-index: 2;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.form h2 {
+    margin: 6px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.form div {
+    color: white;
+    font-size: 24px;
+    margin-top: 18px;
+    overflow: hidden;
+}
+
+.form input {
+    margin-top: 8px;
+    width: 400px;
+    height: 40px;
+    overflow: hidden;
+    border: none;
+
+    border-radius: 16px;
+    border-color: white;
+    background: linear-gradient(to right, #afb8fc , #6f00ff);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-align: center;
+}
+
+.form button {
+    margin-top: 58px;
+    width: 500px;
+    height: 50px;
+    overflow: hidden;
+    
+    border: none;
+    border-radius: 16px;
+    border-color: white;
+    background: linear-gradient(to right, #afb8fc , #6f00ff);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-align: center;
+
+    transition: 1s;
+}
+
+.form button:hover {
+    background-position: 500px;
+}
+
+/* Info page */
+.info-page {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    height: 80vh;
+}
+
+.info-box {
+    position: absolute;
+    width: 60%;
+    height: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top {
+    top: 0;
+    left: 0;
+    margin-top: 12px;
+    margin-left: 100px;
+}
+
+.bottom {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 12px;
+    margin-right: 100px;
+}
+
+.top .text {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-left: 24px;
+}
+
+.bottom .text {
+    text-align: right;
+    color: rgb(0, 0, 0);
+    margin-right: 24px;
+}
+
+.info-box img {
+    margin: 12px;
+}
+
+.top img {
+    box-shadow: 10px 10px 10px black;
+}
+
+.bottom img {
+    box-shadow: -10px -10px 10px black;
+}
+
+.side-rect {
+    position: absolute;
+    height: 110%;
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+.left {
+    left: 0px;
+    translate: -75%;
+    transform: rotate(-5deg);
+}
+
+.right {
+    right: 0px;
+    transform: rotate(5deg);
+    translate: 75%;
+}
+
+/* Notifications */
+.notifications {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 3;
+}
+
+.notifications :where(.toast, .column) {
+    display: flex;
+    align-items: center;
+}
+
+.notifications .toast {
+    width: 400px;
+    list-style: none;
+    border-radius: 4px;
+    padding: 16px 17px;
+    margin-bottom: 10px;
+    background: rgb(255, 255, 255);
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
+    animation: show_toast 0.3s ease forwards;
+}
+
+@keyframes show_toast {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-5%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.notifications .toast.hide {
+    animation: hide_toast 0.3s ease forwards;
+}
+
+@keyframes hide_toast {
+    0% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    80% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(calc(100% + 20px));
+    }
+}
+
+.toast::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100% {
+        width: 0%;
+    }
+}
+
+.toast.success::before { background-color: green;}
+.toast.info::before { background-color: blue;}
+.toast.error::before { background-color: red;}
+
+.toast.success .column i { color: green;}
+.toast.info .column i { color: blue;}
+.toast.error .column i { color: red;}
+
+.toast .column i {
+    font-size: 1.75rem;
+    margin-left: 16px;
+    width: 36px;
+}
+
+.toast .column span {
+    font-size: 1.08rem;
+    margin-left: 16px;
+}
+
+.toast i:last-child {
+    color: #aeb0d7;
+    cursor: pointer;
+}
+
+.toast i:last-child:hover {
+    color: black;
+}
+
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.footer-column {
+    margin-top: 18px;
+    flex-basis: 30%;
+    text-align: center;
+}
+  
+.footer-text {
+    margin-top: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    /* Adjustments for medium-sized screens (e.g., tablets) */
+    .logo img {
+        max-width: 450px;
+        max-height: 450px;
+        width: auto;
+        height: auto;
+    }
+
+    .banner li a {
+        font-size: 18px;
+        margin-right: 12px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Adjustments for small-sized screens (e.g., landscape mobile) */
+    .logo img {
+        max-width: 80px;
+        max-height: 80px;
+        width: auto;
+        height: auto;
+    }
+
+    .banner li a {
+        font-size: 16px;
+        margin-right: 8px;
+
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for extra-small screens (e.g., portrait mobile) */
+    .logo img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner li a {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .form {
+        height: 80vh;
+    }
+
+    .form input, .form button {
+        width: 80%;
+    }
+
+    .form h1 {
+        font-size: 28px;
+    }
+
+    .form h2 {
+        font-size: 16px;
+    }
+
+    .form div {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+
+    .form input {
+        width: 70%;
+        height: 30px;
+    }
+
+    .form button {
+        width: 80%;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .footer-column {
+        margin-top: 12px;
+    }
+
+    .footer-text {
+        margin-top: 24px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    /* Adjustments for smaller portrait mobile screens */
+    .logo img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner ul {
+        width: 100%;
+    }
+
+    .banner li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner li a {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .scroll-down {
+        width: 175px;
+        height: 35px;
+        font-size: 16px;
+
+        bottom: 50px;
+        right: 30px;
+    }
+
+    .inscription-page {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        height: 75vh;
+    }
+
+    .form {
+        z-index: 2;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form h1 {
+        font-size: 24px;
+    }
+
+    .form div {
+        font-size: 16px;
+    }
+
+    .form input {
+        width: 80%;
+        height: 28px;
+        font-size: 18px;
+    }
+
+    .form button {
+        width: 90%;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .info-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .info-box {
+        position: relative;
+        width: 80%;
+        height: 45%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .top {
+        margin-left: 0px;
+    }
+    
+    .bottom {
+        margin-right: 0px;
+    }
+    
+    .top .text {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        margin-left: 0px;
+    }
+    
+    .bottom .text {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        margin-right: 0px;
+        max-width: 200px;
+    }
+    
+    .info-box img {
+        width: 200px;
+        margin: 0px;
+    }
+    
+    .top img {
+        box-shadow: 10px 10px 10px black;
+    }
+    
+    .bottom img {
+        box-shadow: -10px -10px 10px black;
+    }
+
+    .footer-column {
+        margin-top: 6px;
+    }
+
+    .footer-text {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    .notifications .toast {
+        width: 300px;
+    }
+}

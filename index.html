@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <title>Tsunami Event - Musique</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/9556eae611.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="app.js"></script>
+
+    <ul class="notifications"></ul>
+
+    <section class="landing-page">
+        <div class="logo">
+            <img src="assets/images/logo.png">
+        </div>
+
+        <div class="banner">
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="#inscription">Pré-inscriptions</a></li>
+                <li><a href="#info">Informations</a></li>
+                <li><a href="#">Autre</a></li>
+            </ul>
+
+            <h1 class="title">TSUNAMI - EVENEMENT</h1>
+            <h2 class="subtitle">Soirées étudiantes sur Grenoble !</h2>
+        </div>
+
+        <button class="scroll-down" onclick="inscriptionScroll()">
+            Pré-inscriptions
+        </button>
+
+        <div class="custom-shape-divider-bottom-1691167216">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="inscription-page" id="inscription">
+        <div class="custom-shape-divider-top-1691167197">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="wrapper">
+            <div class="shadow"></div>
+        </div>
+
+        <form id="form" class="form" action="send_form.php" method="post" onsubmit="sendForm(); return false;">
+            <h1>Formulaire de pré-inscription</h1>
+            <h2>* champ obligatoire</h2>
+
+            <div>Nom *</div>
+            <input name="firstname" id="firstname" placeholder="Michel">
+            <div>Prénom *</div>
+            <input name="name" id="name" placeholder="Dugrenier">
+            <div>Adresse mail *</div>
+            <input name="mail" id="mail" placeholder="michel_dugrenier@outlook.bif">
+            <div>Numéro de téléphone</div>
+            <input name="phone" id="phone" placeholder="0669696969">
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <div class="custom-shape-divider-bottom-1691167216">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill" style="fill: white;"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="info-page" id="info">
+        <div class="side-rect right"></div>
+
+        <div class="info-box top">
+            <img src="assets/images/info-image.jpg" alt="">
+            <div class="text">
+                <h1>Recette Tartiflette</h1>
+                <div>Pour une délicieuse Tartiflette, suivez les étapes de cette recette :
+    
+                    Épluchez et découpez les pommes de terre en morceaux.
+                    Découpez les oignons en rondelles.
+                    Dans une poêle, faites revenir 3 minutes les lardons avec les oignons afin qu’ils commencent à dorer.
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box bottom">
+            <img src="assets/images/info-image.jpg" alt="">
+            <div class="text">
+                <h1>Recette Tartiflette</h1>
+                <div>Pour une délicieuse Tartiflette, suivez les étapes de cette recette :
+    
+                    Épluchez et découpez les pommes de terre en morceaux.
+                    Découpez les oignons en rondelles.
+                </div>
+            </div>
+        </div>
+
+        <div class="side-rect left"></div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Résaux</h3>
+            <p>Instagram <a>Lien</a></p>
+            <p>Discord <a>Lien</a></p>
+            <p>Facebook ? <a>Lien</a></p>
+          </div>
+          <div class="footer-column">
+            <h3>Copy paste</h3>
+            <p>Instagram <a>Lien</a></p>
+            <p>Discord <a>Lien</a></p>
+            <p>Facebook ? <a>Lien</a></p>          </div>
+          <div class="footer-column">
+            <h3>Pareil hehehehe</h3>
+            <p>Instagram <a>Lien</a></p>
+            <p>Discord <a>Lien</a></p>
+            <p>Facebook ? <a>Lien</a></p>          </div>
+        </div>
+        <p class="footer-text">© 2023 Studio 103. All rights reserved.</p>
+      </footer>
+</body>
+</html>
