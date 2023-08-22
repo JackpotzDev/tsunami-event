@@ -279,12 +279,14 @@ section {
     text-align: left;
     color: rgb(0, 0, 0);
     margin-left: 24px;
+    max-height: 100%;
 }
 
 .bottom .text {
     text-align: right;
     color: rgb(0, 0, 0);
     margin-right: 24px;
+    max-height: 100%;
 }
 
 .info-box img {
