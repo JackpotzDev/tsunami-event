@@ -266,6 +266,7 @@ section {
     left: 0;
     margin-top: 12px;
     margin-left: 100px;
+    max-height: 100%;
 }
 
 .bottom {
@@ -273,6 +274,7 @@ section {
     right: 0;
     margin-bottom: 12px;
     margin-right: 100px;
+    max-height: 100%;
 }
 
 .top .text {
