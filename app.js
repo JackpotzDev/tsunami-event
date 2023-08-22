@@ -46,10 +46,11 @@ const sendForm = () => {
 
     
     var request_data = $('#form');
-    $.post('send_form.php', request_data);
-
-    createToast("success", "fa-circle-check", "Formulaire d'inscription envoyé !");
-
+    $.post('send_form.php', request_data).done(function() {
+        createToast("success", "fa-circle-check", "Formulaire d'inscription envoyé !");
+    }).fail(function(response) {
+        createToast("error", "fa-circle-xmark", "Erreur de l'envoi du formulaire" + response.responseText);
+    });
     firstname.value = "";
     name.value = "";
     mail.value = "";
